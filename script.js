@@ -1,11 +1,6 @@
-var items = [
-  [1,2,3]
-  [4,5,6]
-  [7,8,9]
-];
-
+var index;
+var userInput;
 function start(){
-  alert("hello");
   index = Math.floor(Math.random() * 10) + 1;
   alert(index);
   updateTable(index);
@@ -40,15 +35,56 @@ function updateTable(number){
     default:
       document.getElementById('nine').style.color = "blue";
       break;
-
   }
 }
 
-function checkClick(){
-
+function assignButton(number){
+  alert("hi");
+  if(number == "one"){
+    userInput = 1;
+    alert("1");
+  }
+  if(number == "two"){
+    userInput = 2;
+    alert("2");
+  }
+  if(number == "three"){
+    userInput = 3;
+    alert("3");
+  }
+  if(number == "four"){
+    userInput = 4;
+    alert("4");
+  }
+  if(number == "five"){
+    userInput = 5;
+    alert("5");
+  }
+  if(number == "six"){
+    userInput = 6;
+    alert("6");
+  }
+  if(number == "seven"){
+    userInput = 7;
+    alert("7");
+  }
+  if(number == "eight"){
+    userInput = 8;
+    alert("8");
+  }
+  if(number == "nine"){
+    userInput = 9;
+    alert("9");
+  }
+  checkNumber();
 }
 
+function checkNumber(){
+  if(userInput==index){
+    alert("correct");
+  }
+}
 
-function endGame{
+function restartGame(){
 
 }
